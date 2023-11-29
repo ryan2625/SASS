@@ -1,0 +1,26 @@
+.App {
+    
+    h1 {
+        font-weight: lighter;
+    }
+
+    button { 
+        padding: 10px 30px;
+        border: 20px solid green;
+        background-color: red;
+
+        &:hover{
+            background-color: $btnBgColor;
+
+            &::before{
+                content: "HUHH";
+                color: wheat;
+            }
+
+        }
+
+        &::after{
+            content: "WHAT THE FUCK";
+        }
+    }
+}
