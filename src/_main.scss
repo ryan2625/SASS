@@ -1,31 +1,22 @@
-@mixin basicBtn($bgClr){
-    padding: 10px 30px;
-    border: 20px solid rgb(0, 0, 0);
-    background-color: $bgClr;
+@mixin firstButton($btnColor){
+    color: $btnColor;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
 
     &:hover{
-        background-color: $btnBgColor;
-
-        &::before{
-            content: "HUHH";
-            color: rgb(240, 11, 11);
-        }
-
+        background-color: $btnColor;
+        color: black;
     }
-
-    &::after{
-        content: "WHAT THE FUCK";
-    }
-
 }
 
-.App {
-    
-    h1 {
-        font-weight: lighter;
-    }
 
-    button { 
-        @include basicBtn(aqua);
+
+
+.App{
+
+    button{
+        @include firstButton(red);
     }
+    
 }
