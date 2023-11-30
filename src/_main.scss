@@ -8,6 +8,10 @@
         background-color: $btnColor;
         color: black;
     }
+
+    &::after{
+        content: "DO NMOT CLICK ME PLSSSS"
+    }
 }
 
 
